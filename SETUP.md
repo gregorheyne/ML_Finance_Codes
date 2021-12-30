@@ -1,3 +1,13 @@
+# GH Notes
+- adjustments for the setup below:
+    - changed pyton version in the environment file from python=3.6.* to python=3.7.*
+        - otherwise got a pip install error when creating the env from the file
+    - run conda install 'h5py==2.10.0' (in activated env)
+        - otherwise saved models cant be read due to incompatibility with keras
+            - even when trained and written new here
+            - see https://stackoverflow.com/questions/53740577/does-any-one-got-attributeerror-str-object-has-no-attribute-decode-whi
+
+
 # Setup Guide
 This guide contains instructions for installing the software necessary to run the Jupyter notebooks accompanying *Machine Learning in Finance: From Theory to Practice*
 
